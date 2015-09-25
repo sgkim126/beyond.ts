@@ -1,8 +1,7 @@
 language: node_js
-node_js: "4"
-env:
-- CXX=g++-4.8
+node_js: "0.12"
 services:
 - mongodb
 before_install:
 - gem install fluentd --no-ri --no-rdoc
+- npm install ./fluent-logger-0.2.5.tar
